@@ -17,13 +17,19 @@ app.set("views", "views");
 app.set("view engine", "ejs");
 
 // 4 Routing ga bogliq code
-app.get("/hello", function (req, res) {
-  res.end(`<h1 style="background: green" >Hello world by Theo</h1>`);
+
+/*app.get("/Class", function (req, res) {
+  res.end(`<h1 style="background: green" >Hello Theo welcome to MIT </h1>`);
+});*/
+
+app.post("/create-item", (req,res) => {
+      console.log(req);
+      res.json({test:"success"});
 });
 
-app.get("/Class", function (req, res) {
-  res.end(`<h1 style="background: green" >Hello Theo welcome to MIT </h1>`);
-});
+app.get("/",function (req,res) {
+      res.render('harid');
+})
 
 const server = http.createServer(app);
 let PORT = 2000;
