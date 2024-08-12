@@ -23,7 +23,7 @@ app.set("view engine", "ejs");
 });*/
 
 app.post("/create-item", (req,res) => {
-      console.log(req);
+      console.log(req.body);
       res.json({test:"success"});
 });
 
@@ -32,7 +32,7 @@ app.get("/",function (req,res) {
 })
 
 const server = http.createServer(app);
-let PORT = 2000;
+let PORT = 3000;
 server.listen(PORT, function () {
   console.log(`The server is running successfully on port: ${PORT}`);
 });
