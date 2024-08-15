@@ -1,6 +1,5 @@
 console.log("Web Serverni boshlash");
 const express = require("express");
-const res = require("express/lib/response");
 const app = express();
 const http = require("http");
 const fs = require("fs");
@@ -36,6 +35,9 @@ app.post("/create-item", (req,res) => {
      // console.log(req.body);
       //res.json({test:"success"});
 });
+
+// Request => Tradational & Rest (API) & Grahql(Nester)
+// Request => Header & body
 
 app.get('/author', (req, res) => {
   res.render("author", {user: user});
