@@ -15,7 +15,7 @@ fs.readFile("database/user.json", "utf8", (err, data)=> {
 
 // 1 Kirish kodlar
 app.use(express.static("public")); //imiglar uchun
-app.use(express.json()); // datani object ga ugartiradi
+app.use(express.json()); // datani object ga ugartiradi 
 app.use(express.urlencoded({ extended: true })); //html dan form request qiladi
 
 // 2 Session ga bogliq
