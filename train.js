@@ -1,4 +1,4 @@
-console.log("Jack Ma maslahatlari");
+/*console.log("Jack Ma maslahatlari");
 const list = [
     "yosh talaba bo'ling",// 0-20
     "tog boshliq tanlang va koproq xato qiling", // 20-30
@@ -9,7 +9,7 @@ const list = [
 ];
 
 // Callback functionlar
-function helpme (a,callback) {
+/*function helpme (a,callback) {
     if(typeof a !== "number") callback("insert a number",null);
     else if(a <= 20) callback (null, list[0]);
     else if(a > 20 && a <= 30) callback (null, list[1]);
@@ -44,7 +44,7 @@ function helpme (a,callback) {
     }
 }*/
 
-console.log("passed here 0");
+/*console.log("passed here 0");
 helpme(65, (err, data) => {
     if(err) console.log("ERROR", err);
     else {
@@ -74,3 +74,21 @@ console.log("passed here 1");*/
    // console.log(answer);
 //}
 //run();
+
+
+// A-TASK
+
+function atask(e, word) {
+    let hisob = 0;
+  
+    for (let i = 0; i < word.length; i++) {
+      if (word[i] === e) {
+       
+        hisob++;
+      }
+    }
+    
+    return hisob;
+  }
+  
+  console.log(atask("e", "engineer"));
