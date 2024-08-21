@@ -1,4 +1,4 @@
-/*console.log("Jack Ma maslahatlari");
+console.log("Jack Ma maslahatlari");
 const list = [
     "yosh talaba bo'ling",// 0-20
     "tog boshliq tanlang va koproq xato qiling", // 20-30
@@ -21,10 +21,10 @@ const list = [
         callback(null, list[5]);
        }, 3000);   
     }
-}
+}*/
 
 // ASYNC FUNCTION lar 
- /*async function helpme (a) {
+ async function helpme (a) {
     if(typeof a !== "number") throw new Error("insert a number");
     else if(a <= 20) return list[0];
     else if(a > 20 && a <= 30) return  list[1];
@@ -32,30 +32,30 @@ const list = [
     else if(a > 40 && a <= 50) return  list[3];
     else if(a > 50 && a <= 60) return  list[4];
     else {
-       return new Promise((resolve, reject) => {
-        setInterval(() =>   
-         {
-            resolve(list[5]);
-        }, 2000);
-       });
-        //setTimeout(function () {
-        //return list[5]
-       //}, 5000);   
+       //return new Promise((resolve, reject) => {
+        //setInterval(() =>   
+         //{
+          //  resolve(list[5]);
+       // }, 2000);
+      // });
+        setTimeout(function () {
+        return list[5];
+       }, 5000);   
     }
-}*/
+}
 
 /*console.log("passed here 0");
-helpme(65, (err, data) => {
+helpme(50, (err, data) => {
     if(err) console.log("ERROR", err);
     else {
         console.log("answer:", data)
     }
 });
-console.log("passed here 1");
+console.log("passed here 1");*/
 
 //Then Catch uslubi
 /*console.log("passed here 0");
-helpme(25)
+helpme(60)
 .then(data => {
 console.log("answer:", data);
 })
@@ -65,20 +65,20 @@ console.log("ERROR:", err);
 console.log("passed here 1");*/
 
 // Async/await
-//async function run() {
-   // let answer = await helpme(65);
+async function run() {
+    let answer = await helpme(60);
+    console.log(answer);
+   //answer = await helpme(35);
     //console.log(answer);
-   // answer = await helpme(35);
-   // console.log(answer);
-   // answer = await helpme(41)
-   // console.log(answer);
-//}
-//run();
+    //answer = await helpme(20)
+    //console.log(answer);
+}
+run();
 
 
 // A-TASK
 
-function atask(e, word) {
+/*function atask(e, word) {
     let hisob = 0;
   
     for (let i = 0; i < word.length; i++) {
@@ -91,4 +91,4 @@ function atask(e, word) {
     return hisob;
   }
   
-  console.log(atask("e", "engineer"));
+  console.log(atask("e", "engineer"));*/
