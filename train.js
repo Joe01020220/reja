@@ -35,7 +35,7 @@
 
   //C-TASK
 
-const moment = require("moment");
+/*const moment = require("moment");
 const time = moment().format("HH:mm");
 
 console.log("Bizda non, pamidor, suv bor");
@@ -104,7 +104,23 @@ class shop {
 const story = new shop(15, 25, 10);
 console.log(story.qoldiq());
 console.log(story.qabul("pamidor", 10));
-console.log(story.qoldiq());
+console.log(story.qoldiq());*/
+
+
+//D-TASK
+
+// TASK D
+
+function checkContent(a, b) {
+  let test1 = a.split("").sort().join("");
+  let test2= b.split("").sort().join("");
+  if (test1 === test2) {
+    return true;
+  }
+  return false;
+}
+
+console.log(checkContent("javokhir", "rikhovaj"));
   
   
   

@@ -31,9 +31,6 @@ app.set("view engine", "ejs");
 
 // 4 Routing ga bogliq code
 
-/*app.get("/Class", function (req, res) {
-  res.end(`<h1 style="background: green" >Hello Theo welcome to MIT </h1>`);
-});*/
 
 app.post("/create-item", (req,res) => {
       console.log("user entered /create-item");
