@@ -14,7 +14,7 @@ fs.readFile("database/user.json", "utf8", (err, data)=> {
 });
 
 //MongoDB connect
-const db = require("./server").db();
+const db = require("./server").db();  //CRUD operationdi 
 const mongodb = require("mongodb");
 
 // 1 Kirish kodlar

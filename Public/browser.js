@@ -76,6 +76,8 @@ document.addEventListener("click", function (e) {
     }
 });
 
+// Delete all oper
+
 document.getElementById("clean-all")
 .addEventListener("click", 
     function(){
