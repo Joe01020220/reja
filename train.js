@@ -111,7 +111,7 @@ console.log(story.qoldiq());*/
 
 // TASK D
 
-function checkContent(a, b) {
+/*function checkContent(a, b) {
   let test1 = a.split("").sort().join("");
   let test2= b.split("").sort().join("");
   if (test1 === test2) {
@@ -120,7 +120,16 @@ function checkContent(a, b) {
   return false;
 }
 
-console.log(checkContent("javokhir", "rikhovaj"));
+console.log(checkContent("javokhir", "rikhovaj"));*/
+
+// TASK E
+
+function checkContent(a) {
+  let test = a.split("").reverse().join("");
+    return test;
+  }
+
+console.log(checkContent("nothing"));
   
   
   
