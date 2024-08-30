@@ -124,12 +124,26 @@ console.log(checkContent("javokhir", "rikhovaj"));*/
 
 // TASK E
 
-function checkContent(a) {
+/*function checkContent(a) {
   let test = a.split("").reverse().join("");
     return test;
   }
 
-console.log(checkContent("nothing"));
+console.log(checkContent("nothing"));*/
   
   
-  
+  // TASK F
+
+  function findDoublers(text) {
+    const finder = text.split("");
+    const findeResult = finder.some((double, index) => {
+      console.log(`${finder.indexOf(double)} !== ${index}`);
+
+      return finder.indexOf(double) !== index;
+
+    });
+
+    return findeResult;
+  }
+
+  console.log(findDoublers("tomorrow"));
